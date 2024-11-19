@@ -25,6 +25,8 @@ public class Projectile : MonoBehaviour
         if (other.attachedRigidbody != null && other.attachedRigidbody.CompareTag("Enemy") && other.attachedRigidbody.TryGetComponent(out EnemyHealth health))
         {
             health.DecreaseHealth(Damage);
+            Destroy(gameObject);
+             
         }
     }
 }

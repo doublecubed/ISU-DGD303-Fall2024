@@ -20,6 +20,8 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 _topRight;
 
     public bool MouseMove;
+
+    public ParticleSystem TheParticles;
     
     void Start()
     {
@@ -73,5 +75,18 @@ public class PlayerMovement : MonoBehaviour
         float clampedVertical = Mathf.Clamp(transform.position.z, _bottomLeft.z, _topRight.z);
 
         transform.position = new Vector3(clampedHorizontal, 0f, clampedVertical);
+
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            if (TheParticles.isPlaying)
+            {
+                TheParticles.Stop();
+            }
+            else
+            {
+                TheParticles.Play();
+            }
+            
+        }
     }
 }
