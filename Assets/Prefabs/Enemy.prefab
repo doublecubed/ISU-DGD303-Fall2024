@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1511990946541469212}
   - component: {fileID: 7386008051563965273}
   - component: {fileID: 745814616214296409}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -128,7 +128,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9094148236138236172}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Colliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -162,7 +162,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5789346561584138858}
   - component: {fileID: 1477014616091569258}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wings
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -215,7 +215,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8407774371771303619}
   - component: {fileID: 781061708079019403}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Body
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -267,7 +267,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4171603643436781399}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -377,6 +377,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: spaceship
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ba8d9476277a06a4bac5aaf0d5955149,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

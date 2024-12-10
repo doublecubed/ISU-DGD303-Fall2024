@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 6983681986953422323}
   - component: {fileID: 3647061272403767790}
   - component: {fileID: 6878186050175052141}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Projectile
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47,6 +47,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ae7099b2aac3954e8e73298cc28f8d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HitMask:
+    serializedVersion: 2
+    m_Bits: 64
   Speed: 20
   Damage: 20
 --- !u!65 &3647061272403767790
@@ -109,7 +112,7 @@ GameObject:
   - component: {fileID: 4411509435465844785}
   - component: {fileID: 7688884139537953460}
   - component: {fileID: 5416585379719787168}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}

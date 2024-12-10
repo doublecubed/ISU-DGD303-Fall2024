@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
+    public LayerMask HitMask;
+    
     public float Speed;
     public float Damage;
     
@@ -22,11 +24,12 @@ public class Projectile : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        if (other.attachedRigidbody != null && other.attachedRigidbody.CompareTag("Enemy") && other.attachedRigidbody.TryGetComponent(out EnemyHealth health))
-        {
-            health.DecreaseHealth(Damage);
-            Destroy(gameObject);
-             
-        }
+        if (other.attachedRigidbody == null) return;
+        if (!other.attachedRigidbody.CompareTag("Enemy")) return;
+        if (!other.attachedRigidbody.TryGetComponent(out EnemyHealth health)) return;
+        
+        health.DecreaseHealth(Damage);
+        Destroy(gameObject);
+            
     }
 }

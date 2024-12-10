@@ -17,6 +17,6 @@ public class EnemyHealth : MonoBehaviour
     public void DecreaseHealth(float amount)
     {
         _currentHealth -= amount;
-        //if (_currentHealth <= 0) Destroy(gameObject);
+        if (_currentHealth <= 0) Destroy(gameObject);
     }
 }
